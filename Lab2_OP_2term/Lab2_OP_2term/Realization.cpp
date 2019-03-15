@@ -75,3 +75,10 @@ void console_output_of_the_input_file(int n, Country *arr)
 		cout << endl;
 	}
 }
+void removing_the_array_with_objects(int n, Country *arr)
+{
+	for (int i = 0; i < n; i++)
+	{
+		delete[] arr[i].marks;
+	}
+}

@@ -1,5 +1,6 @@
 ﻿  Main.cpp
   Realization.cpp
-c:\users\сергей\github\lab2_op_2term\lab2_op_2term\lab2_op_2term\realization.cpp(44): warning C4018: <: несоответствие типов со знаком и без знака
+f:\rtt\lab2_op_2term\lab2_op_2term\lab2_op_2term\realization.cpp(44): warning C4018: <: несоответствие типов со знаком и без знака
   Создание кода...
-  Lab2_OP_2term.vcxproj -> C:\Users\Сергей\GitHub\Lab2_OP_2term\Lab2_OP_2term\Debug\Lab2_OP_2term.exe
+  LINK : не найден или не выполнена сборка F:\rtt\Lab2_OP_2term\Lab2_OP_2term\Debug\Lab2_OP_2term.exe при последней инкрементной компоновке; выполняется полная компоновка
+  Lab2_OP_2term.vcxproj -> F:\rtt\Lab2_OP_2term\Lab2_OP_2term\Debug\Lab2_OP_2term.exe
