@@ -109,6 +109,36 @@ void scoring_the_points(int n, Country *arr)
 		cout << endl;
 	}
 }
+void top_winners(Country *arr, int n)
+{
+	ofstream fout("results.csv");
+	fout << "The top-10 winners are:" << endl;
+	cout << endl;
+	cout << "The top-10 winners are:" << endl << endl;
+	int *arr2 = new int[n];
+	for (int i = 0; i < n; i++)
+	{
+		arr2[i] = arr[i].points;
+	}
+	for (int j = 0; j < 10; j++)
+	{
+		int imax = 0;
+		int max = 0;
+		for (int k = 0; k < n; k++)
+		{
+			if (arr2[k] > max)
+			{
+				max = arr2[k];
+				imax = k;
+			}
+		}
+		fout << arr[imax].name << " " << arr[imax].points << endl;
+		cout << arr[imax].name << " " << arr[imax].points << endl;
+		arr2[imax] = 0;
+	}
+	delete[] arr2;
+	arr2 = nullptr;
+}
 void removing_the_array_with_objects(int n, Country *arr)
 {
 	for (int i = 0; i < n; i++)
