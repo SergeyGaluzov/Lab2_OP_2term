@@ -2,5 +2,4 @@
   Realization.cpp
 f:\rtt\lab2_op_2term\lab2_op_2term\lab2_op_2term\realization.cpp(44): warning C4018: <: несоответствие типов со знаком и без знака
   Создание кода...
-  LINK : не найден или не выполнена сборка F:\rtt\Lab2_OP_2term\Lab2_OP_2term\Debug\Lab2_OP_2term.exe при последней инкрементной компоновке; выполняется полная компоновка
   Lab2_OP_2term.vcxproj -> F:\rtt\Lab2_OP_2term\Lab2_OP_2term\Debug\Lab2_OP_2term.exe

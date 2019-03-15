@@ -18,6 +18,7 @@ int main()
 		Country *arr = creating_the_array_of_the_objects_countries(n);
 		filling_the_objects_of_the_array(fin, n, s, arr);
 		console_output_of_the_input_file(n, arr);
+		scoring_the_points(n, arr);
 		removing_the_array_with_objects(n, arr);
 	}
 	fin.close();

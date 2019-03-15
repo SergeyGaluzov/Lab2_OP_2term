@@ -75,6 +75,40 @@ void console_output_of_the_input_file(int n, Country *arr)
 		cout << endl;
 	}
 }
+void scoring_the_points(int n, Country *arr)
+{
+	int p[10] = { 12, 10, 8, 7, 6, 5, 4, 3, 2, 1 };
+	int *temp = new int[n];
+	for (int u = 0; u < n; u++)
+	{
+		for (int i = 0; i < n; i++)
+		{
+			temp[i] = arr[i].marks[u];
+		}
+		for (int r = 0; r < 10; r++)
+		{
+			int imax = 0;
+			int max = 0;
+			for (int i = 0; i < n; i++)
+			{
+				if (temp[i] > max)
+				{
+					max = temp[i];
+					imax = i;
+				}
+			}
+			arr[imax].points += p[r];
+			temp[imax] = 0;
+		}
+	}
+	delete[] temp;
+	temp = nullptr;
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i].name << " " << arr[i].points;
+		cout << endl;
+	}
+}
 void removing_the_array_with_objects(int n, Country *arr)
 {
 	for (int i = 0; i < n; i++)
