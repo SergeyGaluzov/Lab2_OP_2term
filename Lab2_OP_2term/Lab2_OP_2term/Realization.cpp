@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <algorithm>
 using namespace std;
 class Country
 {
@@ -9,7 +8,6 @@ public:
 	string name;
 	int *marks;
 	int points;
-	int sum_of_points;
 	~Country()
 	{};
 };
